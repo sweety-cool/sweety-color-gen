@@ -1,6 +1,6 @@
 FROM node:18
 
-# mkdir /app && cd /app
+
 WORKDIR /sweety-color-gen
 
 COPY . .
