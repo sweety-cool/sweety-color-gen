@@ -1,3 +1,4 @@
+// @ts-ignore
 {
     "extends": "./.svelte-kit/tsconfig.json",
     "compilerOptions": {
@@ -6,10 +7,6 @@
       "esModuleInterop": true,
       "forceConsistentCasingInFileNames": true,
       "strict": true,
-      "skipLibCheck": true,
-      "paths": {
-        "$lib": ["./src/lib"],
-        "$lib/*": ["./src/lib/*"]
-      },
+      "skipLibCheck": true
     }
   }
