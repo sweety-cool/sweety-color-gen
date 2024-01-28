@@ -31,6 +31,7 @@
     "dexie": "4.0.1-beta.6",
     "embla-carousel-svelte": "8.0.0-rc21",
     "formsnap": "^0.4.3",
+    "geist": "^1.2.1",
     "mode-watcher": "^0.1.2",
     "radix-icons-svelte": "^1.2.1",
     "svelte-sonner": "^0.3.11",

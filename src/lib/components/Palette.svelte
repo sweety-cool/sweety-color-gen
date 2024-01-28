@@ -11,7 +11,6 @@
 </script>
 
 {#if color && colors.length > 0}
-
     <div class="mt-8 grid grid-cols-10 min-h-[150px] gap-2">
         {#each colors as c}
             <div class="color-card" style="--color: {c.hexcode};" class:alt={c.luminance < 30}>
@@ -19,7 +18,6 @@
             </div>
         {/each}
     </div>
-        
 {/if}
 
 <style lang="postcss">
