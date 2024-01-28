@@ -16,16 +16,21 @@
   }
     let brandColor = "#A89DB5";
 </script>
+
+
 <div class="border-b py-8">
   <div class="container">
       <h1 class="text-4xl font-bold"> Color pallate</h1>
   </div>
 </div>
+
+
 <!-- <Input  class=" m-11 w-70 h-10 p-2" type="text" bind:value={brandColor} /> -->
 <div class="grid w-full max-w-sm items-center gap-1.5">
   <Label class="m-6" for="text">Hexcode</Label>
   <Input class="m-11 w-70 h-10 p-2" type="text" placeholder="hexcode" bind:value={brandColor}/>
 </div>
+
 <Button class="m-4 w-20 " on:click={generatePallet}>Click</Button>
 
 
