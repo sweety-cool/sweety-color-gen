@@ -8,7 +8,7 @@
     import Palette from "$lib/components/Palette.svelte";
     import chroma from "chroma-js";
 
-    let brandColor = "#5A03D5";
+    let brandColor = rnd();
     let colors = [];
 
     function rnd(){
@@ -43,7 +43,7 @@
 
 
 
-<h1 class="text-5xl font-medium mt-10 lg:mt-20 text-center">Generate color pallete</h1>
+<h1 class="text-5xl font-medium mt-10 lg:mt-20 text-center">Generate color palette</h1>
 <div class="mt-8 flex mx-auto max-w-sm items-center gap-2">
   <Input class="text-base" type="text" placeholder="hexcode" bind:value={brandColor}/>
   <Button on:click={generate}>Generate</Button>

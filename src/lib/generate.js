@@ -95,7 +95,8 @@ export const tailwindColors = [
       { number: 600, hexcode: "#e11d48" },
       { number: 700, hexcode: "#be123c" },
       { number: 800, hexcode: "#9f1239" },
-      { number: 900, hexcode: "#881337" }
+      { number: 900, hexcode: "#881337" },
+      { number: 950, hexcode: "#4c0519" }
     ]
   },
   {
@@ -110,7 +111,8 @@ export const tailwindColors = [
       { number: 600, hexcode: "#db2777" },
       { number: 700, hexcode: "#be185d" },
       { number: 800, hexcode: "#9d174d" },
-      { number: 900, hexcode: "#831843" }
+      { number: 900, hexcode: "#831843" },
+      { number: 950, hexcode: "#500724" }
     ]
   },
   {
@@ -125,7 +127,8 @@ export const tailwindColors = [
       { number: 600, hexcode: "#c026d3" },
       { number: 700, hexcode: "#a21caf" },
       { number: 800, hexcode: "#86198f" },
-      { number: 900, hexcode: "#701a75" }
+      { number: 900, hexcode: "#701a75" },
+      { number: 950, hexcode: "#4a044e" }
     ]
   },
   {
@@ -140,7 +143,8 @@ export const tailwindColors = [
       { number: 600, hexcode: "#9333ea" },
       { number: 700, hexcode: "#7e22ce" },
       { number: 800, hexcode: "#6b21a8" },
-      { number: 900, hexcode: "#581c87" }
+      { number: 900, hexcode: "#581c87" },
+      { number: 950, hexcode: "#3b0764" }
     ]
   },
   {
@@ -155,7 +159,8 @@ export const tailwindColors = [
       { number: 600, hexcode: "#7c3aed" },
       { number: 700, hexcode: "#6d28d9" },
       { number: 800, hexcode: "#5b21b6" },
-      { number: 900, hexcode: "#4c1d95" }
+      { number: 900, hexcode: "#4c1d95" },
+      { number: 950, hexcode: "#2e1065" }
     ]
   },
   {
@@ -170,7 +175,8 @@ export const tailwindColors = [
       { number: 600, hexcode: "#4f46e5" },
       { number: 700, hexcode: "#4338ca" },
       { number: 800, hexcode: "#3730a3" },
-      { number: 900, hexcode: "#312e81" }
+      { number: 900, hexcode: "#312e81" },
+      { number: 950, hexcode: "#1e1b4b" }
     ]
   },
   {
@@ -185,7 +191,8 @@ export const tailwindColors = [
       { number: 600, hexcode: "#2563eb" },
       { number: 700, hexcode: "#1d4ed8" },
       { number: 800, hexcode: "#1e40af" },
-      { number: 900, hexcode: "#1e3a8a" }
+      { number: 900, hexcode: "#1e3a8a" },
+      { number: 950, hexcode: "#172554" }
     ]
   },
   {
@@ -200,7 +207,8 @@ export const tailwindColors = [
       { number: 600, hexcode: "#0284c7" },
       { number: 700, hexcode: "#0369a1" },
       { number: 800, hexcode: "#075985" },
-      { number: 900, hexcode: "#0c4a6e" }
+      { number: 900, hexcode: "#0c4a6e" },
+      { number: 950, hexcode: "#082f49" }
     ]
   },
   {
@@ -215,7 +223,8 @@ export const tailwindColors = [
       { number: 600, hexcode: "#0891b2" },
       { number: 700, hexcode: "#0e7490" },
       { number: 800, hexcode: "#155e75" },
-      { number: 900, hexcode: "#164e63" }
+      { number: 900, hexcode: "#164e63" },
+      { number: 950, hexcode: "#083344" }
     ]
   },
   {
@@ -230,7 +239,8 @@ export const tailwindColors = [
       { number: 600, hexcode: "#0d9488" },
       { number: 700, hexcode: "#0f766e" },
       { number: 800, hexcode: "#115e59" },
-      { number: 900, hexcode: "#134e4a" }
+      { number: 900, hexcode: "#134e4a" },
+      { number: 950, hexcode: "#042f2e" }
     ]
   },
   {
@@ -245,7 +255,8 @@ export const tailwindColors = [
       { number: 600, hexcode: "#059669" },
       { number: 700, hexcode: "#047857" },
       { number: 800, hexcode: "#065f46" },
-      { number: 900, hexcode: "#064e3b" }
+      { number: 900, hexcode: "#064e3b" },
+      { number: 950, hexcode: "#022c22" }
     ]
   },
   {
@@ -260,7 +271,8 @@ export const tailwindColors = [
       { number: 600, hexcode: "#16a34a" },
       { number: 700, hexcode: "#15803d" },
       { number: 800, hexcode: "#166534" },
-      { number: 900, hexcode: "#14532d" }
+      { number: 900, hexcode: "#14532d" },
+      { number: 950, hexcode: "#052e16" }
     ]
   },
   {
@@ -275,7 +287,8 @@ export const tailwindColors = [
       { number: 600, hexcode: "#65a30d" },
       { number: 700, hexcode: "#4d7c0f" },
       { number: 800, hexcode: "#3f6212" },
-      { number: 900, hexcode: "#365314" }
+      { number: 900, hexcode: "#365314" },
+      { number: 950, hexcode: "#1a2e05" }
     ]
   },
   {
@@ -290,7 +303,8 @@ export const tailwindColors = [
       { number: 600, hexcode: "#ca8a04" },
       { number: 700, hexcode: "#a16207" },
       { number: 800, hexcode: "#854d0e" },
-      { number: 900, hexcode: "#713f12" }
+      { number: 900, hexcode: "#713f12" },
+      { number: 950, hexcode: "#422006" }
     ]
   },
   {
@@ -305,7 +319,8 @@ export const tailwindColors = [
       { number: 600, hexcode: "#d97706" },
       { number: 700, hexcode: "#b45309" },
       { number: 800, hexcode: "#92400e" },
-      { number: 900, hexcode: "#78350f" }
+      { number: 900, hexcode: "#78350f" },
+      { number: 950, hexcode: "#451a03" }
     ]
   },
   {
@@ -320,7 +335,8 @@ export const tailwindColors = [
       { number: 600, hexcode: "#ea580c" },
       { number: 700, hexcode: "#c2410c" },
       { number: 800, hexcode: "#9a3412" },
-      { number: 900, hexcode: "#7c2d12" }
+      { number: 900, hexcode: "#7c2d12" },
+      { number: 950, hexcode: "#431407" }
     ]
   },
   {
@@ -335,7 +351,8 @@ export const tailwindColors = [
       { number: 600, hexcode: "#dc2626" },
       { number: 700, hexcode: "#b91c1c" },
       { number: 800, hexcode: "#991b1b" },
-      { number: 900, hexcode: "#7f1d1d" }
+      { number: 900, hexcode: "#7f1d1d" },
+      { number: 950, hexcode: "#450a0a" }
     ]
   }
 ];

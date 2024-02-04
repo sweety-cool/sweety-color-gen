@@ -2,7 +2,7 @@
     import generate from "$lib/generate";
     import ContrastGrid from "./ContrastGrid.svelte";
 
-    import * as AlertDialog from "$lib/components/ui/alert-dialog";
+    import * as Dialog from "$lib/components/ui/dialog";
     import { Button } from "$lib/components/ui/button";
 
     let colors = [];
@@ -11,12 +11,11 @@
     $: if (color && color.match(/^#[0-9a-fA-F]{6}$/i)) {
         const { shades } = generate(color);
         colors = shades;
-        console.log(shades);
     }
 </script>
 
 {#if color && colors.length > 0}
-    <section class="mt-8 grid grid-cols-10 min-h-[150px] gap-2">
+    <section class="mt-8 grid grid-cols-11 min-h-[150px] gap-2">
         {#each colors as c}
             <div
                 class="color-card"
@@ -28,22 +27,25 @@
         {/each}
     </section>
 
-    <!-- CONTRAST GRID -->
-    <AlertDialog.Root class="!w-[50rem]">
-        <AlertDialog.Trigger asChild let:builder>
-            <Button builders={[builder]} variant="outline"
-                >Show Contrast Grid</Button
-            >
-        </AlertDialog.Trigger>
-        <AlertDialog.Content>
-            <AlertDialog.Header>
-                <AlertDialog.Title>Contrast Grid</AlertDialog.Title>
-                <AlertDialog.Description>
+    <section class="flex justify-end mt-3">
+        <!-- CONTRAST GRID -->
+        <Dialog.Root>
+            <Dialog.Trigger>
+                <Button variant="outline" class="font-semibold" size="sm">Contrast Grid</Button>
+            </Dialog.Trigger>
+            <Dialog.Content class="max-w-[52rem]">
+                <Dialog.Header>
+                    <Dialog.Title>Contrast Grid</Dialog.Title>
+                    <Dialog.Description>
+                        See the contrast of colors, compared to the other colors in the palette.
+                    </Dialog.Description>
+                </Dialog.Header>
+                <div class="m-auto">
                     <ContrastGrid {colors} />
-                </AlertDialog.Description>
-            </AlertDialog.Header>
-        </AlertDialog.Content>
-    </AlertDialog.Root>
+                </div>
+            </Dialog.Content>
+        </Dialog.Root>
+    </section>
 {/if}
 
 <style lang="postcss">
