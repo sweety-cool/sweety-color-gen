@@ -6,13 +6,13 @@
 
     import Button from "$lib/components/ui/button/button.svelte";
     import Palette from "$lib/components/Palette.svelte";
-
+    import chroma from "chroma-js";
 
     let brandColor = "#5A03D5";
     let colors = [];
 
     function rnd(){
-      return "#" + Math.floor(Math.random()*16777215).toString(16).toUpperCase();
+      return chroma.random().hex().toUpperCase();
     }
 
     function generate() {
@@ -28,6 +28,17 @@
       db.colors.add({ name: saveName, hex: brandColor, time: Date.now() });
       saveName = "";
     }
+
+    function handlekeyChange(e) {
+      console.log("e---",e);
+      if (e.code=="Space") {
+        generate();  
+      }
+    }
+
+    function stop(e){
+      e.stopPropagation();
+    }
 </script>
 
 
@@ -41,14 +52,12 @@
 
 <Palette color={brandColor} />
 
-
+<svelte:body on:keypress={handlekeyChange}/>
 <AlertDialog.Root bind:open={saveDialogOpen}>
   <AlertDialog.Content>
     <AlertDialog.Header>
       <AlertDialog.Title>Please give a name</AlertDialog.Title>
-      <Input class="my-5" type="text" placeholder="Name" bind:value={saveName}/>
-      <!-- <Palette color={brandColor} /> -->
-
+      <Input class="my-5" type="text" placeholder="Name" bind:value={saveName} on:keypress={stop}/>
     </AlertDialog.Header>
     <AlertDialog.Footer>
       <AlertDialog.Cancel>Cancel</AlertDialog.Cancel>
