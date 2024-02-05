@@ -2,7 +2,11 @@
     import chroma from "chroma-js";
     export let colors = [];
 
-    let allColors = [...colors];
+    let allColors = [
+        { number: "White", hexcode: "#ffffff" },
+        ...colors,
+        { number: "Black", hexcode: "#000000" },
+    ];
 
     function contrast(color1, color2) {
         return chroma.contrast(color1, color2).toFixed(1);
@@ -18,12 +22,16 @@
     <header class="grid cols gap-1.5">
         <div></div>
         {#each allColors as c2}
-            <div class="w-12 flex items-center justify-center text-sm mb-1">{c2.number}</div>
+            <div class="w-12 flex items-center justify-center text-sm mb-1">
+                {c2.number}
+            </div>
         {/each}
     </header>
     {#each allColors as c1}
         <section class="grid cols gap-1.5">
-            <div class="flex items-center justify-center text-sm">{c1.number}</div>
+            <div class="flex items-center justify-center text-sm">
+                {c1.number}
+            </div>
             {#each allColors as c2}
                 <div
                     class="box"
@@ -41,13 +49,14 @@
     .box {
         @apply w-12 h-12 border rounded-md text-xs font-medium;
         @apply flex items-center justify-center;
-        @apply bg-muted text-transparent;
+        @apply bg-muted text-transparent border-dashed;
     }
     .box.show {
         background: var(--c2) !important;
-        @apply text-black;
+        color: var(--c1) !important;
+        border-color: var(--c1) !important;
     }
     .cols {
-        grid-template-columns: repeat(12, minmax(0, 1fr));
+        grid-template-columns: repeat(14, minmax(0, 1fr));
     }
 </style>
